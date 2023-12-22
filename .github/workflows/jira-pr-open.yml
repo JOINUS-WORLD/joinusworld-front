@@ -2,8 +2,7 @@ name: Link Jira issue key in PR
 on:
   pull_request:
     types: [opened]
-    branches-ignore:
-      - dev
+    
 jobs:
   link_jira_issue:
     runs-on: ubuntu-latest
