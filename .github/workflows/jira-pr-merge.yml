@@ -3,8 +3,6 @@ name: Move issue after PR merge
 on:
   pull_request:
     types: [closed]
-    branches-ignore:
-      - dev
 
 jobs:
   test-transition-issue:
