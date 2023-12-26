@@ -10,33 +10,48 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "root-workspace-0b6124",\
+      "name": "join-world-renewal",\
       "reference": "workspace:."\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["root-workspace-0b6124", ["workspace:."]]\
+    ["join-world-renewal", ["workspace:."]]\
   ],\
   "fallbackPool": [\
+    [\
+      "typescript",\
+      "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"\
+    ]\
   ],\
   "packageRegistryData": [\
     [null, [\
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
       }]\
     ]],\
-    ["root-workspace-0b6124", [\
+    ["join-world-renewal", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["root-workspace-0b6124", "workspace:."]\
+          ["join-world-renewal", "workspace:."],\
+          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["typescript", [\
+      ["patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7", {\
+        "packageLocation": "../../../.yarn/berry/cache/typescript-patch-4778c7998b-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]]\
   ]\
