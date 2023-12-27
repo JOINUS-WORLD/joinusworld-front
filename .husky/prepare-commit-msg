@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# For instance with feat/JUW-11
+# $ git commit -m "chore: blah blah"
+# will result with commit "[JUW-11] chore: blah blah"
+
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+if [ "$BRANCH_NAME" = "main" ] || [ "$BRANCH_NAME" = "dev" ]; then
+  exit 0
+fi
+
+ISSUE_TICKET=$(git symbolic-ref --short HEAD | grep -o -E '[A-Za-z]+\-[0-9]+')
+ISSUE_TICKET="${ISSUE_TICKET##*/}"
+ISSUE_TICKET=$(echo "$ISSUE_TICKET" | tr '[:lower:]' '[:upper:]')
+
+echo "🐱 Adding the issue number [${ISSUE_TICKET}] to your commit message."
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat $COMMIT_MSG_FILE)
+
+if grep -qv "\[${ISSUE_TICKET}\]" "$COMMIT_MSG_FILE" && [ -n "$ISSUE_TICKET" ]; then 
+  sed -i.bak "1s/^/[$ISSUE_TICKET] /" "$COMMIT_MSG_FILE"
+fi
