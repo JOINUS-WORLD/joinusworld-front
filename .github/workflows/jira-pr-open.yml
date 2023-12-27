@@ -2,8 +2,7 @@ name: Link Jira issue key in PR
 on:
   pull_request:
     types: [opened]
-    branches-ignore:
-      - dev
+
 jobs:
   link_jira_issue:
     runs-on: ubuntu-latest
@@ -18,5 +17,5 @@ jobs:
         uses: AsasInnab/pr-body-action@v1
         if: steps.find.outputs.issue != ''
         with:
-          body: "[${{ steps.find.outputs.issue }}](${{ secrets.JIRA_BASE_URL }}/browse/${{ steps.find.outputs.issue }})\\n${{ github.event.pull_request.body }}"
+          body: "${{ github.event.pull_request.body }} <br> [[ 이슈 번호 : ${{ steps.find.outputs.issue }} ]](${{ secrets.JIRA_BASE_URL }}/browse/${{ steps.find.outputs.issue }})"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

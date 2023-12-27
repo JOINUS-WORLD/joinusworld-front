@@ -3,8 +3,6 @@ name: Move issue after PR merge
 on:
   pull_request:
     types: [closed]
-    branches-ignore:
-      - dev
 
 jobs:
   test-transition-issue:
@@ -23,11 +21,11 @@ jobs:
         uses: atlassian/gajira-find-issue-key@master
         id: jira-ticket
         with:
-          from: commits
+          string: ${{ github.event.pull_request.title }}
 
       - name: Transition issue
         if: steps.jira-ticket.outputs.issue != ''
         uses: atlassian/gajira-transition@master
         with:
           issue: ${{ steps.jira-ticket.outputs.issue }}
-          transition: "Ready for QA"
+          transition: "완료"
