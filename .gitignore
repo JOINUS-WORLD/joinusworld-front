@@ -1,4 +1,9 @@
+*.DS_Store
+*.log
+*.tsbuildinfo
+
 # yarn zero install
+.pnp.*
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -6,3 +11,18 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+**/packge-lock.json
+**/node_modules/
+
+**/dist/*
+dist
+
+# storybook
+**/storybook-static/
+
+# next.js
+**/.next/
+**/out/
+
+# production
+**/build
