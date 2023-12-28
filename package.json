@@ -4,9 +4,10 @@
     "packages/**/*",
     "services/**/*"
   ],
+  "private": true,
   "scripts": {
     "commit": "git commit -m",
-    "web": "yarn workspace '@join-world/web' run dev",
+    "web": "yarn workspace @join-world/web",
     "graph": "nx graph",
     "prepare": "husky install"
   },
@@ -26,9 +27,14 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.0",
+    "jsonc-parser": "^3.2.0",
     "lint-staged": "^15.0.2",
     "nx": "^16.8.1",
     "prettier": "^3.0.3",
     "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
   }
 }

@@ -162,20 +162,12 @@ const RAW_RUNTIME_STATE =
       "npm:0.8.1"\
     ],\
     [\
-      "@emotion/react",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:11.11.3"\
-    ],\
-    [\
       "@emotion/serialize",\
       "npm:1.1.3"\
     ],\
     [\
       "@emotion/sheet",\
       "npm:1.2.2"\
-    ],\
-    [\
-      "@emotion/styled",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:11.11.0"\
     ],\
     [\
       "@emotion/unitless",\
@@ -2598,10 +2590,6 @@ const RAW_RUNTIME_STATE =
       "npm:2.6.2"\
     ],\
     [\
-      "next",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:14.0.4"\
-    ],\
-    [\
       "node-addon-api",\
       "npm:3.2.1"\
     ],\
@@ -2927,19 +2915,11 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "ramda",\
-      "npm:0.29.0"\
-    ],\
-    [\
-      "react",\
-      "npm:18.2.0"\
+      "npm:0.29.1"\
     ],\
     [\
       "react-colorful",\
       "virtual:0c71b01b128d987cd15a3c0f03d6104aa7fdf9f579788113e6db3bee41f7a2a4973033d41c411397a45bde2447e4a7f81396a5edc589dabc08cbc1463f4f011c#npm:5.6.1"\
-    ],\
-    [\
-      "react-dom",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:18.2.0"\
     ],\
     [\
       "react-is",\
@@ -3322,10 +3302,6 @@ const RAW_RUNTIME_STATE =
     [\
       "style-search",\
       "npm:0.1.0"\
-    ],\
-    [\
-      "styled-jsx",\
-      "virtual:aa5d83c32f39c22e5df4fbe5cc17db52ca63a4bf59e2c957ea992316df759edffb569709f933e43ea1cc196e3d9921a6c2dbb68e6c9cdcbfdad7b37879e7061d#npm:5.1.1"\
     ],\
     [\
       "stylelint",\
@@ -3766,6 +3742,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-simple-import-sort", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:10.0.0"],\
           ["eslint-plugin-storybook", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:0.6.15"],\
           ["husky", "npm:8.0.3"],\
+          ["jsonc-parser", "npm:3.2.0"],\
           ["lint-staged", "npm:15.2.0"],\
           ["nx", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:16.10.0"],\
           ["prettier", "npm:3.1.1"],\
@@ -4819,6 +4796,7 @@ const RAW_RUNTIME_STATE =
           ["postcss", "npm:8.4.32"],\
           ["postcss-styled-syntax", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:0.5.0"],\
           ["postcss-syntax", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:0.36.2"],\
+          ["ramda", "npm:0.29.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:18.2.0"],\
           ["stylelint", "npm:16.1.0"],\
@@ -11867,6 +11845,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-simple-import-sort", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:10.0.0"],\
           ["eslint-plugin-storybook", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:0.6.15"],\
           ["husky", "npm:8.0.3"],\
+          ["jsonc-parser", "npm:3.2.0"],\
           ["lint-staged", "npm:15.2.0"],\
           ["nx", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:16.10.0"],\
           ["prettier", "npm:3.1.1"],\
@@ -14182,6 +14161,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/ramda-npm-0.29.0-ec4babb485-10c0.zip/node_modules/ramda/",\
         "packageDependencies": [\
           ["ramda", "npm:0.29.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.29.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/ramda-npm-0.29.1-25eea2b737-10c0.zip/node_modules/ramda/",\
+        "packageDependencies": [\
+          ["ramda", "npm:0.29.1"]\
         ],\
         "linkType": "HARD"\
       }]\
