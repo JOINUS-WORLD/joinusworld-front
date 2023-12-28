@@ -1,0 +1,26 @@
+FROM node:18-alpine AS base
+
+FROM base AS dep
+RUN apk add --no-cache build-base python3 libc6-compat
+
+WORKDIR /app/services/web
+COPY ./services/web/package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
+RUN \
+  if [ -f yarn.lock ]; then yarn cache clean --all && yarn install; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+COPY ./services/web .
+
+FROM base AS runner
+
+WORKDIR /app
+COPY ./tsconfig.base.json .
+
+WORKDIR /app/services/web
+COPY --from=dep /app/services/web .
+ENV NODE_ENV development
+
+CMD ["yarn", "start"]
