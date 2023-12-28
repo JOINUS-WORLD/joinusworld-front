@@ -1,0 +1,39 @@
+{
+  "name": "@join-world/web",
+  "packageManager": "yarn@4.0.2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:css": "stylelint './src/**/*.tsx'"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
+    "postcss-styled-syntax": "^0.5.0",
+    "postcss-syntax": "^0.36.2",
+    "ramda": "^0.29.1",
+    "stylelint": "latest",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^6.0.4",
+    "typescript": "^5"
+  }
+}
