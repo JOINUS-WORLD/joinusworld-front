@@ -1,5 +1,10 @@
-import Loading from "./Loading";
+import Link from "next/link";
 
 export default function Home() {
-  return <Loading />;
+  return (
+    <div>
+      <h1>Home</h1>
+      <Link href="/test">test</Link>
+    </div>
+  );
 }
