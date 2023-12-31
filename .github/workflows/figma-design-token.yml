@@ -1,0 +1,46 @@
+name: Create PR from design to main
+
+on:
+  push:
+    branches:
+      - design
+    paths:
+      - "tokens.json"
+
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Run Token Transformer
+        run: |
+          cd packages
+          content=$(cat tokens.json)
+          if [[ $content == *"\"light\""* ]]; then
+            npx token-transformer tokens.json ./tokens-light.json light
+          elif [[ $content == *"\"dark\""* ]]; then
+            npx token-transformer tokens.json ./tokens-dark.json dark
+          fi
+            
+          cd themes 
+          yarn build
+
+          git config --global user.name "Doyu-Lee" 
+          git config --global user.email "doyu.lee.0406@gmail.com"
+          git add .
+          git commit -m 'design: convert figma token'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      # 디자인 파일 변환 후 생성된 파일도 push해서 dev 브랜치로 병합하는 PR 생성
+      - name: Create Pull Request
+        run: gh pr create -B dev -H figma --title '[Design Team] Update Design Tokens' --body '디자인 토큰이 업데이트 후 변환작업을 수행했습니다. / Performed conversion tasks after updating design tokens.'
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
