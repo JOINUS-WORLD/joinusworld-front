@@ -5,7 +5,7 @@ on:
     branches:
       - figma
     paths:
-      - "tokens.json"
+      - "packages/tokens.json"
 
 jobs:
   createPullRequest:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Run Token Transformer
         run: |
@@ -29,12 +29,13 @@ jobs:
           fi
             
           cd themes 
+          yarn add @join-world/esbuild-config
           yarn build
 
           git config --global user.name "Doyu-Lee" 
           git config --global user.email "doyu.lee.0406@gmail.com"
           git add .
-          git commit -m 'design: convert figma token'
+          git commit -m 'design(auto): convert figma token'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
