@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "rootDir": ".",
     "outDir": "ts",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -23,7 +24,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@packages/*": ["../../packages/*"]
+      "@packages/*": ["../../packages/*"],
+      "@join-world/themes/*": ["../../packages/themes/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
