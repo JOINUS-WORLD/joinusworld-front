@@ -1,8 +1,8 @@
 export const light = {
   ref: {
     palette: {
-      blue900: "#cbeef5",
-      blue800: "#96cee3",
+      blue900: "#032276",
+      blue800: "#05318f",
       blue700: "#0846b1",
       blue600: "#0b5ed4",
       blue500: "#107af7",
