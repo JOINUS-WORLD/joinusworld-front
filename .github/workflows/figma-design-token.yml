@@ -5,7 +5,7 @@ on:
     branches:
       - figma
     paths:
-      - "tokens.json"
+      - "packages/tokens.json"
 
 jobs:
   createPullRequest:
