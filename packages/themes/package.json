@@ -1,0 +1,30 @@
+{
+  "name": "@join-world/themes",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./theme-light.css": "./dist/theme-light.css",
+    "./theme-dark.css": "./dist/theme-dark.css",
+    "./theme-class.css": "./dist/theme-class.css"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
+    "build:js": "node build.js",
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "build:css": "node ./transferLightTokens.js && node ./transferDarkTokens.js && node ./transferLightColor.js && node ./transferDarkColor.js && node ./transferOthers.js && yarn lint",
+    "clean": "rm -rf dist",
+    "lint": "npx prettier --write ./"
+  },
+  "devDependencies": {
+    "@join-world/esbuild-config": "workspace:^",
+    "@types/node": "^20.10.6",
+    "style-dictionary": "^3.9.1",
+    "typescript": "^5.2.2"
+  }
+}

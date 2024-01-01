@@ -1,0 +1,15 @@
+# docker-compose -f docker-compose-dev.yml build --no-cache
+# docker-compose -f docker-compose-dev.yml up
+version: "3"
+services:
+  web:
+    build:
+      dockerfile: ./services/web/Dockerfile.dev
+      context: ./
+    image: doyuu/juw-front:latest
+    volumes:
+      - /app/services/web/node_modules
+      - ./services/web:/app/services/web
+    stdin_open: true
+    ports:
+      - "3000:3000"
