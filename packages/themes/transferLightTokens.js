@@ -95,7 +95,7 @@ StyleDictionaryExtended.registerFormat({
           font-family: ${token.value.fontFamily};
           font-weight: ${token.value.fontWeight};
           font-size: ${convertPxToRemInString(token.value.fontSize)};
-          line-height: ${token.value.lineHeight};
+          line-height: ${convertPxToRemInString(token.value.lineHeight)};
         }
         `;
         }

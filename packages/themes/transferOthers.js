@@ -47,6 +47,7 @@ StyleDictionaryExtended.registerFormat({
           return {
             ...obj.value,
             fontSize: convertPxToRemInString(obj.value.fontSize),
+            lineHeight: convertPxToRemInString(obj.value.lineHeight),
           };
         }
         return obj.value;
