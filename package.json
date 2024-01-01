@@ -7,8 +7,9 @@
   "private": true,
   "scripts": {
     "commit": "git commit -m",
-    "web": "yarn workspace @join-world/web",
-    "graph": "nx graph",
+    "affected:build": "nx affected -t build",
+    "affected:test": "nx affected -t test",
+    "graph": "nx run-many --target=build --graph",
     "prepare": "husky install"
   },
   "packageManager": "yarn@4.0.2",
@@ -27,7 +28,6 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.0",
-    "jsonc-parser": "^3.2.0",
     "lint-staged": "^15.0.2",
     "nx": "^16.8.1",
     "prettier": "^3.0.3",

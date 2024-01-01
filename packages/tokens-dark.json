@@ -1,0 +1,111 @@
+{
+  "ref": {
+    "palette": {
+      "blue900": {
+        "value": "#111111",
+        "type": "color"
+      },
+      "blue800": {
+        "value": "#333333",
+        "type": "color"
+      }
+    },
+    "typeface": {
+      "fontweight-medium": {
+        "value": "medium",
+        "type": "fontWeights"
+      },
+      "fontweight-bold": {
+        "value": "bold",
+        "type": "fontWeights"
+      }
+    }
+  },
+  "sys": {
+    "spacing1": {
+      "value": "2px",
+      "type": "spacing"
+    },
+    "spacing2": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "spacing7": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "shadow1": {
+      "value": [
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 2,
+          "spread": 0,
+          "color": "#05318F",
+          "type": "innerShadow"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "blur": 2,
+          "spread": 2,
+          "color": "#e5e5e5",
+          "type": "innerShadow"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "color": {
+      "icon": {
+        "primary": {
+          "dark2": {
+            "value": "#05318F",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "motion": {
+      "easing": {
+        "ease-in": {
+          "value": "cubic-bezier(0, 0, 0.40, 1)",
+          "type": "other"
+        }
+      },
+      "duration": {
+        "micro1": {
+          "value": "130ms",
+          "type": "other"
+        },
+        "micro2": {
+          "value": "160ms",
+          "type": "other"
+        },
+        "micro3": {
+          "value": "190ms",
+          "type": "other"
+        }
+      }
+    },
+    "typescale": {
+      "headline-b1": {
+        "value": {
+          "fontFamily": "pretendard",
+          "fontWeight": "bold",
+          "fontSize": "28px",
+          "lineHeight": "38px"
+        },
+        "type": "typography"
+      },
+      "headline-m1": {
+        "value": {
+          "fontFamily": "pretendard",
+          "fontWeight": "medium",
+          "fontSize": "26px",
+          "lineHeight": "36px"
+        },
+        "type": "typography"
+      }
+    }
+  }
+}
