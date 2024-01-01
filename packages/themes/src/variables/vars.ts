@@ -5,6 +5,9 @@ export const ref = {
     fontweightMedium: 500,
     fontweightBold: 700,
   },
+  border: {
+    circle: "50%",
+  },
 };
 
 export const sys = {
