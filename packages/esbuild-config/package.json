@@ -5,6 +5,9 @@
   "files": [
     "index.js"
   ],
+  "exports": {
+    ".": "./index.js"
+  },
   "dependencies": {
     "esbuild": "0.16.17"
   }
