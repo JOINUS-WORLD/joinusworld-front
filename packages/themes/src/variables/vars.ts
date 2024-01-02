@@ -11,10 +11,25 @@ export const ref = {
 };
 
 export const sys = {
-  shadow3: "0px 1px 12px 0px #0000000a, 0px 8px 40px 0px #0000001a",
-  shadow2: "0px 1px 12px 0px #0000000a, 0px 4px 24px 0px #00000014",
-  shadow1: "0px 1px 6px 0px #0000000a, 0px 4px 16px 0px #00000014",
-  spacing1: 2,
+  shadow: {
+    level3: "0px 1px 12px 0px #0000000a, 0px 8px 40px 0px #0000001a",
+    level2: "0px 1px 12px 0px #0000000a, 0px 4px 24px 0px #00000014",
+    level1: "0px 1px 6px 0px #0000000a, 0px 4px 16px 0px #00000014",
+  },
+  spacing: {
+    size1: "2px",
+    size2: "4px",
+    size3: "6px",
+    size4: "8px",
+    size5: "12px",
+    size6: "16px",
+    size7: "20px",
+    size8: "24px",
+    size9: "32px",
+    size10: "40px",
+    size11: "48px",
+    size12: "64px",
+  },
   motion: {
     easing: {
       easeIn: "cubic-bezier(0, 0, 0.40, 1)",
@@ -35,17 +50,6 @@ export const sys = {
       macro6: "500ms",
     },
   },
-  spacing2: 4,
-  spacing3: 6,
-  spacing4: 8,
-  spacing5: 12,
-  spacing6: 16,
-  spacing7: 20,
-  spacing8: 24,
-  spacing9: 32,
-  spacing10: 40,
-  spacing11: 48,
-  spacing12: 64,
   typescale: {
     headlineB1: {
       fontFamily: "Pretendard",
