@@ -13,7 +13,8 @@
 - nx, yarn berry로 관리
 - 워크스페이스 : packages(shared), services
 
-<img width="611" alt="image" src="https://github.com/JOINUS-WORLD/joinusworld-front/assets/125176463/d0215dd9-a8e6-4adb-b8eb-447be4594bfe">
+<img width="850" alt="image" src="https://github.com/JOINUS-WORLD/joinusworld-front/assets/125176463/4df85101-db4d-4d4b-82b4-236878ecb66c">
+
 
 <br>
 
