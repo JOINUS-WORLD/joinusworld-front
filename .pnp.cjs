@@ -1594,6 +1594,10 @@ const RAW_RUNTIME_STATE =
       "npm:1.0.3"\
     ],\
     [\
+      "@vanilla-extract/sprinkles",\
+      "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:1.6.1"\
+    ],\
+    [\
       "@vitejs/plugin-react",\
       "virtual:a9dea67e40be46e87d1f2184fe59110f2d9bc7a9ef220f6953ba1ed2610c093170322d16be1a8afeccd2e1b729019daf8d0218f00b279ab1d8cabecb71332082#npm:3.1.0"\
     ],\
@@ -2132,6 +2136,10 @@ const RAW_RUNTIME_STATE =
     [\
       "clone-regexp",\
       "npm:1.0.1"\
+    ],\
+    [\
+      "clsx",\
+      "npm:2.1.0"\
     ],\
     [\
       "collapse-white-space",\
@@ -9450,6 +9458,8 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.18"],\
           ["@vanilla-extract/css", "npm:1.14.0"],\
           ["@vanilla-extract/esbuild-plugin", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:2.3.1"],\
+          ["@vanilla-extract/sprinkles", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:1.6.1"],\
+          ["clsx", "npm:2.1.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -9471,6 +9481,8 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.18"],\
           ["@vanilla-extract/css", "npm:1.14.0"],\
           ["@vanilla-extract/esbuild-plugin", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:2.3.1"],\
+          ["@vanilla-extract/sprinkles", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:1.6.1"],\
+          ["clsx", "npm:2.1.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -13636,6 +13648,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@vanilla-extract/sprinkles", [\
+      ["npm:1.6.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@vanilla-extract-sprinkles-npm-1.6.1-e524ee399f-10c0.zip/node_modules/@vanilla-extract/sprinkles/",\
+        "packageDependencies": [\
+          ["@vanilla-extract/sprinkles", "npm:1.6.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:1.6.1", {\
+        "packageLocation": "./.yarn/__virtual__/@vanilla-extract-sprinkles-virtual-0897d9edf5/4/.yarn/berry/cache/@vanilla-extract-sprinkles-npm-1.6.1-e524ee399f-10c0.zip/node_modules/@vanilla-extract/sprinkles/",\
+        "packageDependencies": [\
+          ["@vanilla-extract/sprinkles", "virtual:1af820381b03a54de05e8dbc2438cc6e0b66b8673dcbd395b6c125b8944e86ca1408f737c7cc250985b5c622b29156f9582f36abc9dd3f38296da8b425361a81#npm:1.6.1"],\
+          ["@types/vanilla-extract__css", null],\
+          ["@vanilla-extract/css", "npm:1.14.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/vanilla-extract__css",\
+          "@vanilla-extract/css"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@vitejs/plugin-react", [\
       ["npm:3.1.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@vitejs-plugin-react-npm-3.1.0-98ff1f6673-10c0.zip/node_modules/@vitejs/plugin-react/",\
@@ -15396,6 +15430,15 @@ const RAW_RUNTIME_STATE =
           ["clone-regexp", "npm:1.0.1"],\
           ["is-regexp", "npm:1.0.0"],\
           ["is-supported-regexp-flag", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["clsx", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/clsx-npm-2.1.0-29d286e1de-10c0.zip/node_modules/clsx/",\
+        "packageDependencies": [\
+          ["clsx", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
