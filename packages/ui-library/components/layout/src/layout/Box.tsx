@@ -8,7 +8,7 @@ import { BoxProps } from "./types";
 
 const Box = (props: BoxProps, ref: React.Ref<HTMLElement>) => {
   const { as = "div", color, background, children } = props;
-  console.log(vars.colors.mode.ref.palette.yellow200);
+
   return React.createElement(
     as,
     {
