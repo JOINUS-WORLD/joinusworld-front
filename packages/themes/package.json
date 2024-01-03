@@ -1,5 +1,6 @@
 {
   "name": "@join-world/themes",
+  "packageManager": "yarn@4.0.2",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -17,7 +18,7 @@
     "build": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
     "build:js": "node build.js",
     "build:type": "yarn tsc --emitDeclarationOnly",
-    "build:css": "node ./transferLightTokens.js && node ./transferDarkTokens.js && node ./transferLightColor.js && node ./transferDarkColor.js && node ./transferOthers.js && yarn lint",
+    "build:css": "node ./transferLightTokens.js && node ./transferDarkTokens.js && node ./transferLightColor.js && node ./transferDarkColor.js && node ./transferOthers.js && node ./transferModeColor.js && yarn lint",
     "clean": "rm -rf dist",
     "lint": "npx prettier --write ./"
   },

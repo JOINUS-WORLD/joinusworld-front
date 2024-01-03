@@ -6,11 +6,13 @@
   ],
   "private": true,
   "scripts": {
-    "commit": "git commit -m",
     "affected:build": "nx affected -t build",
     "affected:test": "nx affected -t test",
     "graph": "nx run-many --target=build --graph",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev:all": "yarn dev:storybook & yarn dev:packages",
+    "dev:storybook": "nx storybook @join-world/storybook",
+    "dev:packages": "nx run-many --target=dev --projects='@join-world/ui-components-*'"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
