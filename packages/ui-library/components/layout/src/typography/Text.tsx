@@ -4,10 +4,11 @@ import * as React from "react";
 
 import { BaseStyle, StyleSprinkles } from "../core/style.css";
 import { extractSprinkleProps } from "../utils/properties";
-import { BoxProps } from "./types";
+import { textStyle } from "./style.css";
+import { TextProps } from "./types";
 
-const Box = (props: BoxProps, ref: React.Ref<HTMLElement>) => {
-  const { as = "div", color, background, children } = props;
+const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
+  const { as = "p", color = "gray50", background, children, fontSize } = props;
 
   return React.createElement(
     as,
@@ -19,6 +20,9 @@ const Box = (props: BoxProps, ref: React.Ref<HTMLElement>) => {
         StyleSprinkles(
           extractSprinkleProps(props, Array.from(StyleSprinkles.properties)),
         ),
+        textStyle({
+          fontSize,
+        }),
         props.className,
       ]),
       style: {
@@ -31,5 +35,5 @@ const Box = (props: BoxProps, ref: React.Ref<HTMLElement>) => {
   );
 };
 
-const _Box = React.forwardRef(Box);
-export { _Box as Box };
+const _Text = React.forwardRef(Text);
+export { _Text as Text };
