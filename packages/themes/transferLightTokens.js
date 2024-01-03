@@ -15,6 +15,9 @@ const StyleDictionaryExtended = StyleDictionary.extend({
           destination: "theme-class.css",
           format: "class/custom",
           filter: (token) => token.type === "typography",
+          options: {
+            outputReferences: true,
+          },
         },
       ],
     },
