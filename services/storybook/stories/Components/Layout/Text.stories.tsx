@@ -16,7 +16,9 @@ export default {
       control: "select",
     },
     fontSize: {
-      options: Object.keys(vars.sys.typescale),
+      options: Object.keys(vars.sys.typescale).filter(
+        (key) => key.includes("body") || key.includes("label"),
+      ),
       control: "select",
     },
     color: {
