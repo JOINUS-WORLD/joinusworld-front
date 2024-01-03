@@ -68,7 +68,7 @@ export const sys = {
       fontFamily: "Pretendard",
       fontWeight: 400,
       fontSize: "1.5rem",
-      lineHeight: "34px",
+      lineHeight: "32px",
     },
     titleB1: {
       fontFamily: "Pretendard",
