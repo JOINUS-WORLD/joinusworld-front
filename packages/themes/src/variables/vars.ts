@@ -4,6 +4,7 @@ export const ref = {
     fontweightRegular: 400,
     fontweightMedium: 500,
     fontweightBold: 700,
+    fontweightSemibold: 600,
   },
   border: {
     circle: "50%",
@@ -67,7 +68,7 @@ export const sys = {
       fontFamily: "Pretendard",
       fontWeight: 400,
       fontSize: "1.5rem",
-      lineHeight: "32px",
+      lineHeight: "34px",
     },
     titleB1: {
       fontFamily: "Pretendard",
