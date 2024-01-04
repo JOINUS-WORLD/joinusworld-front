@@ -125,9 +125,7 @@ export const sys = {
       lineHeight: "20px",
     },
     labelSb1: {
-      font: "Pretendard",
       size: "14px",
-      fontweight: 600,
     },
     labelSb1Lineheight: "22px",
     labelM1: {
@@ -149,5 +147,16 @@ export const sys = {
       lineHeight: "20px",
     },
     labelR1Lineheight: "22px",
+    headlineB1Font: "Pretendard",
+    headlineM1Font: "Pretendard",
+    headlineR1Font: "Pretendard",
+    titleB1Font: "Pretendard",
+    titleB2Font: "Pretendard",
+    titleB3Font: "Pretendard",
+    titleM1Font: "Pretendard",
+    titleM2Font: "Pretendard",
+    titleR1Font: "Pretendard",
+    bodyB1Font: "Pretendard",
+    bodyM1Font: "Pretendard",
   },
 };
