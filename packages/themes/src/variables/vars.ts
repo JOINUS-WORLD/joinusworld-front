@@ -52,6 +52,12 @@ export const sys = {
     },
   },
   typescale: {
+    headlineB1: {
+      fontFamily: "Pretendard",
+      fontSize: "1.75rem",
+      fontWeight: 700,
+      lineHeight: "36px",
+    },
     headlineM1: {
       fontFamily: "Pretendard",
       fontSize: "1.625rem",
@@ -118,6 +124,12 @@ export const sys = {
       fontSize: "0.75rem",
       lineHeight: "20px",
     },
+    labelSb1: {
+      font: "Pretendard",
+      size: "14px",
+      fontweight: 600,
+      lineheight: "22px",
+    },
     labelM1: {
       fontFamily: "Pretendard",
       fontWeight: 500,
@@ -135,12 +147,6 @@ export const sys = {
       fontWeight: 400,
       fontSize: "0.75rem",
       lineHeight: "20px",
-    },
-    labelSb1: {
-      font: "Pretendard",
-      size: "13px",
-      fontweight: 600,
-      lineheight: "22px",
     },
   },
 };
