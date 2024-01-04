@@ -52,12 +52,6 @@ export const sys = {
     },
   },
   typescale: {
-    headlineB1: {
-      fontFamily: "Pretendard",
-      fontWeight: 700,
-      fontSize: "1.75rem",
-      lineHeight: "38px",
-    },
     headlineM1: {
       fontFamily: "Pretendard",
       fontSize: "1.625rem",
