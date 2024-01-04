@@ -8,7 +8,7 @@ import { textStyle } from "./style.css";
 import { TextProps } from "./types";
 
 const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
-  const { as = "p", color = "gray50", background, children, fontSize } = props;
+  const { as = "p", color, background, children, fontSize } = props;
 
   return React.createElement(
     as,
