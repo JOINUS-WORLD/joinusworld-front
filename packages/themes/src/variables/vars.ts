@@ -141,5 +141,11 @@ export const sys = {
       fontSize: "0.75rem",
       lineHeight: "1.25rem",
     },
+    labelSb1: {
+      font: "Pretendard",
+      size: "13px",
+      fontweight: 600,
+      lineheight: "22px",
+    },
   },
 };
