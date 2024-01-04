@@ -4,7 +4,6 @@ export const ref = {
     fontweightRegular: 400,
     fontweightMedium: 500,
     fontweightBold: 700,
-    fontweightSemibold: 600,
   },
   border: {
     circle: "50%",

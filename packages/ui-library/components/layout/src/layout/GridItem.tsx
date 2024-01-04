@@ -4,11 +4,22 @@ import * as React from "react";
 
 import { BaseStyle, StyleSprinkles } from "../core/style.css";
 import { extractSprinkleProps } from "../utils/properties";
-import { textStyle } from "./style.css";
-import { TextProps } from "./types";
+import { GridItemProps } from "./types";
 
-const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
-  const { as = "p", color, background, children, fontSize } = props;
+const GridItem = (props: GridItemProps, ref: React.Ref<HTMLElement>) => {
+  const {
+    as = "div",
+    color,
+    background,
+    children,
+    area,
+    colEnd,
+    colStart,
+    colSpan,
+    rowEnd,
+    rowStart,
+    rowSpan,
+  } = props;
 
   return React.createElement(
     as,
@@ -20,12 +31,16 @@ const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
         StyleSprinkles(
           extractSprinkleProps(props, Array.from(StyleSprinkles.properties)),
         ),
-        textStyle({
-          fontSize,
-        }),
         props.className,
       ]),
       style: {
+        gridArea: area,
+        gridColumnEnd: colEnd,
+        gridColumnStart: colStart,
+        gridColumn: colSpan,
+        gridRowEnd: rowEnd,
+        gridRowStart: rowStart,
+        gridRow: rowSpan,
         color: color && vars.colors.mode.ref.palette[color],
         background: background && vars.colors.mode.ref.palette[background],
         ...props.style,
@@ -35,5 +50,5 @@ const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
   );
 };
 
-const _Text = React.forwardRef(Text);
-export { _Text as Text };
+const _GridItem = React.forwardRef(GridItem);
+export { _GridItem as GridItem };

@@ -4,11 +4,23 @@ import * as React from "react";
 
 import { BaseStyle, StyleSprinkles } from "../core/style.css";
 import { extractSprinkleProps } from "../utils/properties";
-import { textStyle } from "./style.css";
-import { TextProps } from "./types";
+import { FlexProps } from "./types";
 
-const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
-  const { as = "p", color, background, children, fontSize } = props;
+const Flex = (props: FlexProps, ref: React.Ref<HTMLElement>) => {
+  const {
+    as = "div",
+    color,
+    background,
+    align,
+    basis,
+    direction,
+    grow,
+    justify,
+    shrink,
+    wrap,
+    gap,
+    children,
+  } = props;
 
   return React.createElement(
     as,
@@ -20,12 +32,18 @@ const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
         StyleSprinkles(
           extractSprinkleProps(props, Array.from(StyleSprinkles.properties)),
         ),
-        textStyle({
-          fontSize,
-        }),
         props.className,
       ]),
       style: {
+        display: "flex",
+        alignItems: align,
+        justifyContent: justify,
+        flexDirection: direction,
+        flexWrap: wrap,
+        flexGrow: grow,
+        flexShrink: shrink,
+        flexBasis: basis,
+        gap,
         color: color && vars.colors.mode.ref.palette[color],
         background: background && vars.colors.mode.ref.palette[background],
         ...props.style,
@@ -35,5 +53,5 @@ const Text = (props: TextProps, ref: React.Ref<HTMLElement>) => {
   );
 };
 
-const _Text = React.forwardRef(Text);
-export { _Text as Text };
+const _Flex = React.forwardRef(Flex);
+export { _Flex as Flex };
