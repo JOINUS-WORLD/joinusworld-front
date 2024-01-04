@@ -144,7 +144,7 @@ export const sys = {
     },
     labelSb1: {
       font: "Pretendard",
-      size: "14px",
+      size: "13px",
       fontweight: 600,
       lineheight: "22px",
     },
