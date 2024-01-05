@@ -100,14 +100,14 @@ export const light = {
           fill: {
             light1: "#FCFCE5",
             light2: "#FFFAC0",
-            dark1: "#F6E900",
-            dark2: "#FFDD00",
+            dark1: "#FFDD00",
+            dark2: "#FFC400",
           },
           border: {
             light1: "#FFFAC0",
             light2: "#FEF695",
-            dark1: "#FFDD00",
-            dark2: "#FFC400",
+            dark1: "#FFC400",
+            dark2: "#FFAB00",
           },
         },
         success: {
@@ -196,8 +196,8 @@ export const light = {
           light1: "#E5F5E6",
         },
         tertiary: {
-          dark2: "#FFDD00",
-          dark1: "#F6E900",
+          dark2: "#FFC400",
+          dark1: "#FFDD00",
           light2: "#FFFAC0",
           light1: "#FCFCE5",
         },
@@ -247,8 +247,8 @@ export const light = {
           light1: "#E5F5E6",
         },
         tertiary: {
-          dark2: "#FFDD00",
-          dark1: "#F6E900",
+          dark2: "#FFC400",
+          dark1: "#FFDD00",
           light2: "#FFFAC0",
           light1: "#FCFCE5",
         },
