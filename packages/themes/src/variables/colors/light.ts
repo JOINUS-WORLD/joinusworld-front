@@ -285,7 +285,7 @@ export const light = {
       },
       bg: { white: "#ffffff", gray: "#f8f9fa" },
       "state-layer": { op1: "#0000000a", op2: "#00000014", op3: "#0000001f" },
-      other: { backdrop: "#00000080" },
+      other: { backdrop: "#00000080", focusline: "#000000" },
     },
   },
 };
