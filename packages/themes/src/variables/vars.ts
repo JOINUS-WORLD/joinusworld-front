@@ -124,10 +124,6 @@ export const sys = {
       fontSize: "0.75rem",
       lineHeight: "20px",
     },
-    labelSb1: {
-      size: "14px",
-    },
-    labelSb1Lineheight: "22px",
     labelM1: {
       fontFamily: "Pretendard",
       fontWeight: 500,
@@ -146,7 +142,6 @@ export const sys = {
       fontSize: "0.75rem",
       lineHeight: "20px",
     },
-    labelR1Lineheight: "22px",
     headlineB1Font: "Pretendard",
     headlineM1Font: "Pretendard",
     headlineR1Font: "Pretendard",
