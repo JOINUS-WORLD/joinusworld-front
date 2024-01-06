@@ -180,6 +180,10 @@ export const light = {
             dark2: "#343a40",
           },
         },
+        other: {
+          fill: { black: "#000000", white: "#ffffff" },
+          border: { black: "#000000", white: "#ffffff" },
+        },
       },
       text: {
         other: { black: "#000000", white: "#ffffff" },
