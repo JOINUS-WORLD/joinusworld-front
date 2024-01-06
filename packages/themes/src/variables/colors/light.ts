@@ -178,6 +178,7 @@ export const light = {
             light2: "#e9ecef",
             dark1: "#495057",
             dark2: "#343a40",
+            light3: "#dee2e6",
           },
         },
         other: {
