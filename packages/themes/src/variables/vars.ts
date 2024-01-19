@@ -9,7 +9,7 @@ export const ref = {
     },
     fontsize: {
       "0": "0.75rem",
-      fontsize1: "0.875rem",
+      "1": "0.875rem",
       fontsize2: "1rem",
       fontsize3: "1.125rem",
       fontsize4: "1.25rem",
@@ -20,7 +20,7 @@ export const ref = {
     },
     lineheight: {
       "0": "1.25rem",
-      lineheight1: "1.375rem",
+      "1": "1.375rem",
       lineheight2: "1.5rem",
       lineheight3: "1.625rem",
       lineheight4: "1.75rem",
@@ -40,8 +40,8 @@ export const sys = {
     level1: "0px 1px 6px 0px #0000000a, 0px 4px 16px 0px #00000014",
   },
   spacing: {
-    size1: "0.125rem",
-    size2: "0.25rem",
+    "1": "0.125rem",
+    "2": "0.25rem",
     size3: "0.375rem",
     size4: "0.5rem",
     size5: "0.75rem",
