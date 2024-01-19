@@ -8,7 +8,7 @@ export const ref = {
       semibold: 600,
     },
     fontsize: {
-      fontsize0: "0.75rem",
+      "0": "0.75rem",
       fontsize1: "0.875rem",
       fontsize2: "1rem",
       fontsize3: "1.125rem",
@@ -19,7 +19,7 @@ export const ref = {
       fontsize8: "1.75rem",
     },
     lineheight: {
-      lineheight0: "1.25rem",
+      "0": "1.25rem",
       lineheight1: "1.375rem",
       lineheight2: "1.5rem",
       lineheight3: "1.625rem",
