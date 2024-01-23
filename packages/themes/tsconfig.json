@@ -6,7 +6,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@join-world/themes/*": ["../themes"]
-    }
-  }
+      "@join-world/themes/*": ["../themes"],
+    },
+  },
 }
