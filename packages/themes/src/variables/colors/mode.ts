@@ -178,6 +178,17 @@ export const sys = {
           light2: "var(--sys-color-container-base-border-light2)",
           dark1: "var(--sys-color-container-base-border-dark1)",
           dark2: "var(--sys-color-container-base-border-dark2)",
+          light3: "var(--sys-color-container-base-border-light3)",
+        },
+      },
+      other: {
+        fill: {
+          black: "var(--sys-color-container-other-fill-black)",
+          white: "var(--sys-color-container-other-fill-white)",
+        },
+        border: {
+          black: "var(--sys-color-container-other-border-black)",
+          white: "var(--sys-color-container-other-border-white)",
         },
       },
     },
@@ -294,12 +305,505 @@ export const sys = {
       gray: "var(--sys-color-bg-gray)",
     },
     stateLayer: {
-      op1: "var(--sys-color-state-layer-op1)",
-      op2: "var(--sys-color-state-layer-op2)",
-      op3: "var(--sys-color-state-layer-op3)",
+      baseOp1: "var(--sys-color-state-layer-base-op1)",
+      baseOp2: "var(--sys-color-state-layer-base-op2)",
+      baseOp3: "var(--sys-color-state-layer-base-op3)",
+      baseOp4: "var(--sys-color-state-layer-base-op4)",
+      baseOp5: "var(--sys-color-state-layer-base-op5)",
+      primaryOp1: "var(--sys-color-state-layer-primary-op1)",
+      primaryOp2: "var(--sys-color-state-layer-primary-op2)",
+      primaryOp3: "var(--sys-color-state-layer-primary-op3)",
+      primaryOp4: "var(--sys-color-state-layer-primary-op4)",
+      primaryOp5: "var(--sys-color-state-layer-primary-op5)",
+      secondaryOp1: "var(--sys-color-state-layer-secondary-op1)",
+      secondaryOp2: "var(--sys-color-state-layer-secondary-op2)",
+      secondaryOp3: "var(--sys-color-state-layer-secondary-op3)",
+      secondaryOp4: "var(--sys-color-state-layer-secondary-op4)",
+      secondaryOp5: "var(--sys-color-state-layer-secondary-op5)",
+      tertiaryOp1: "var(--sys-color-state-layer-tertiary-op1)",
+      tertiaryOp2: "var(--sys-color-state-layer-tertiary-op2)",
+      tertiaryOp3: "var(--sys-color-state-layer-tertiary-op3)",
+      tertiaryOp4: "var(--sys-color-state-layer-tertiary-op4)",
+      tertiaryOp5: "var(--sys-color-state-layer-tertiary-op5)",
+      infoOp1: "var(--sys-color-state-layer-info-op1)",
+      infoOp2: "var(--sys-color-state-layer-info-op2)",
+      infoOp3: "var(--sys-color-state-layer-info-op3)",
+      infoOp4: "var(--sys-color-state-layer-info-op4)",
+      infoOp5: "var(--sys-color-state-layer-info-op5)",
+      successOp1: "var(--sys-color-state-layer-success-op1)",
+      successOp2: "var(--sys-color-state-layer-success-op2)",
+      successOp3: "var(--sys-color-state-layer-success-op3)",
+      successOp4: "var(--sys-color-state-layer-success-op4)",
+      successOp5: "var(--sys-color-state-layer-success-op5)",
+      warningOp1: "var(--sys-color-state-layer-warning-op1)",
+      warningOp2: "var(--sys-color-state-layer-warning-op2)",
+      warningOp3: "var(--sys-color-state-layer-warning-op3)",
+      warningOp4: "var(--sys-color-state-layer-warning-op4)",
+      warningOp5: "var(--sys-color-state-layer-warning-op5)",
+      dangerOp1: "var(--sys-color-state-layer-danger-op1)",
+      dangerOp2: "var(--sys-color-state-layer-danger-op2)",
+      dangerOp3: "var(--sys-color-state-layer-danger-op3)",
+      dangerOp4: "var(--sys-color-state-layer-danger-op4)",
+      dangerOp5: "var(--sys-color-state-layer-danger-op5)",
     },
     other: {
       backdrop: "var(--sys-color-other-backdrop)",
+      focusline: "var(--sys-color-other-focusline)",
+    },
+  },
+};
+
+export const comp = {
+  btn: {
+    container: {
+      primary: {
+        fill: "var(--sys-btn-container-primary-fill)",
+        border: "var(--sys-btn-container-primary-border)",
+      },
+      secondary: {
+        fill: "var(--sys-btn-container-secondary-fill)",
+        border: "var(--sys-btn-container-secondary-border)",
+      },
+      tertiary: {
+        fill: "var(--sys-btn-container-tertiary-fill)",
+        border: "var(--sys-btn-container-tertiary-border)",
+      },
+      info: {
+        fill: "var(--sys-btn-container-info-fill)",
+        border: "var(--sys-btn-container-info-border)",
+      },
+      success: {
+        fill: "var(--sys-btn-container-success-fill)",
+        border: "var(--sys-btn-container-success-border)",
+      },
+      warning: {
+        fill: "var(--sys-btn-container-warning-fill)",
+        border: "var(--sys-btn-container-warning-border)",
+      },
+      danger: {
+        fill: "var(--sys-btn-container-danger-fill)",
+        border: "var(--sys-btn-container-danger-border)",
+      },
+      neutral: {
+        fill: "var(--sys-btn-container-neutral-fill)",
+        border: "var(--sys-btn-container-neutral-border)",
+      },
+      primaryDisabled: {
+        fill: "var(--sys-btn-container-primary-disabled-fill)",
+        border: "var(--sys-btn-container-primary-disabled-border)",
+      },
+      secondaryDisabled: {
+        fill: "var(--sys-btn-container-secondary-disabled-fill)",
+        border: "var(--sys-btn-container-secondary-disabled-border)",
+      },
+      tertiaryDisabled: {
+        fill: "var(--sys-btn-container-tertiary-disabled-fill)",
+        border: "var(--sys-btn-container-tertiary-disabled-border)",
+      },
+      infoDisabled: {
+        fill: "var(--sys-btn-container-info-disabled-fill)",
+        border: "var(--sys-btn-container-info-disabled-border)",
+      },
+      successDisabled: {
+        fill: "var(--sys-btn-container-success-disabled-fill)",
+        border: "var(--sys-btn-container-success-disabled-border)",
+      },
+      warningDisabled: {
+        fill: "var(--sys-btn-container-warning-disabled-fill)",
+        border: "var(--sys-btn-container-warning-disabled-border)",
+      },
+      dangerDisabled: {
+        fill: "var(--sys-btn-container-danger-disabled-fill)",
+        border: "var(--sys-btn-container-danger-disabled-border)",
+      },
+      neutralDisabled: {
+        fill: "var(--sys-btn-container-neutral-disabled-fill)",
+        border: "var(--sys-btn-container-neutral-disabled-border)",
+      },
+    },
+    text: {
+      primary: {
+        solid: "var(--sys-btn-text-primary-solid)",
+        outline: "var(--sys-btn-text-primary-outline)",
+        ghost: "var(--sys-btn-text-primary-ghost)",
+      },
+      primaryDisabled: {
+        solid: "var(--sys-btn-text-primary-disabled-solid)",
+        outline: "var(--sys-btn-text-primary-disabled-outline)",
+        ghost: "var(--sys-btn-text-primary-disabled-ghost)",
+      },
+      secondary: {
+        solid: "var(--sys-btn-text-secondary-solid)",
+        outline: "var(--sys-btn-text-secondary-outline)",
+        ghost: "var(--sys-btn-text-secondary-ghost)",
+      },
+      secondaryDisabled: {
+        solid: "var(--sys-btn-text-secondary-disabled-solid)",
+        outline: "var(--sys-btn-text-secondary-disabled-outline)",
+        ghost: "var(--sys-btn-text-secondary-disabled-ghost)",
+      },
+      tertiary: {
+        solid: "var(--sys-btn-text-tertiary-solid)",
+        outline: "var(--sys-btn-text-tertiary-outline)",
+        ghost: "var(--sys-btn-text-tertiary-ghost)",
+      },
+      tertiaryDisabled: {
+        solid: "var(--sys-btn-text-tertiary-disabled-solid)",
+        outline: "var(--sys-btn-text-tertiary-disabled-outline)",
+        ghost: "var(--sys-btn-text-tertiary-disabled-ghost)",
+      },
+      info: {
+        solid: "var(--sys-btn-text-info-solid)",
+        outline: "var(--sys-btn-text-info-outline)",
+        ghost: "var(--sys-btn-text-info-ghost)",
+      },
+      infoDisabled: {
+        solid: "var(--sys-btn-text-info-disabled-solid)",
+        outline: "var(--sys-btn-text-info-disabled-outline)",
+        ghost: "var(--sys-btn-text-info-disabled-ghost)",
+      },
+      success: {
+        solid: "var(--sys-btn-text-success-solid)",
+        outline: "var(--sys-btn-text-success-outline)",
+        ghost: "var(--sys-btn-text-success-ghost)",
+      },
+      successDisabled: {
+        solid: "var(--sys-btn-text-success-disabled-solid)",
+        outline: "var(--sys-btn-text-success-disabled-outline)",
+        ghost: "var(--sys-btn-text-success-disabled-ghost)",
+      },
+      warning: {
+        solid: "var(--sys-btn-text-warning-solid)",
+        outline: "var(--sys-btn-text-warning-outline)",
+        ghost: "var(--sys-btn-text-warning-ghost)",
+      },
+      warningDisabled: {
+        solid: "var(--sys-btn-text-warning-disabled-solid)",
+        outline: "var(--sys-btn-text-warning-disabled-outline)",
+        ghost: "var(--sys-btn-text-warning-disabled-ghost)",
+      },
+      danger: {
+        solid: "var(--sys-btn-text-danger-solid)",
+        outline: "var(--sys-btn-text-danger-outline)",
+        ghost: "var(--sys-btn-text-danger-ghost)",
+      },
+      dangerDisabled: {
+        solid: "var(--sys-btn-text-danger-disabled-solid)",
+        outline: "var(--sys-btn-text-danger-disabled-outline)",
+        ghost: "var(--sys-btn-text-danger-disabled-ghost)",
+      },
+      neutral: {
+        solid: "var(--sys-btn-text-neutral-solid)",
+        outline: "var(--sys-btn-text-neutral-outline)",
+        ghost: "var(--sys-btn-text-neutral-ghost)",
+      },
+      neutralDisabled: {
+        solid: "var(--sys-btn-text-neutral-disabled-solid)",
+        outline: "var(--sys-btn-text-neutral-disabled-outline)",
+        ghost: "var(--sys-btn-text-neutral-disabled-ghost)",
+      },
+    },
+    icon: {
+      primary: {
+        solid: "var(--sys-btn-icon-primary-solid)",
+        outline: "var(--sys-btn-icon-primary-outline)",
+        ghost: "var(--sys-btn-icon-primary-ghost)",
+      },
+      primaryDisabled: {
+        solid: "var(--sys-btn-icon-primary-disabled-solid)",
+        outline: "var(--sys-btn-icon-primary-disabled-outline)",
+        ghost: "var(--sys-btn-icon-primary-disabled-ghost)",
+      },
+      secondary: {
+        solid: "var(--sys-btn-icon-secondary-solid)",
+        outline: "var(--sys-btn-icon-secondary-outline)",
+        ghost: "var(--sys-btn-icon-secondary-ghost)",
+      },
+      secondaryDisabled: {
+        solid: "var(--sys-btn-icon-secondary-disabled-solid)",
+        outline: "var(--sys-btn-icon-secondary-disabled-outline)",
+        ghost: "var(--sys-btn-icon-secondary-disabled-ghost)",
+      },
+      tertiary: {
+        solid: "var(--sys-btn-icon-tertiary-solid)",
+        outline: "var(--sys-btn-icon-tertiary-outline)",
+        ghost: "var(--sys-btn-icon-tertiary-ghost)",
+      },
+      tertiaryDisabled: {
+        solid: "var(--sys-btn-icon-tertiary-disabled-solid)",
+        outline: "var(--sys-btn-icon-tertiary-disabled-outline)",
+        ghost: "var(--sys-btn-icon-tertiary-disabled-ghost)",
+      },
+      info: {
+        solid: "var(--sys-btn-icon-info-solid)",
+        outline: "var(--sys-btn-icon-info-outline)",
+        ghost: "var(--sys-btn-icon-info-ghost)",
+      },
+      infoDisabled: {
+        solid: "var(--sys-btn-icon-info-disabled-solid)",
+        outline: "var(--sys-btn-icon-info-disabled-outline)",
+        ghost: "var(--sys-btn-icon-info-disabled-ghost)",
+      },
+      success: {
+        solid: "var(--sys-btn-icon-success-solid)",
+        outline: "var(--sys-btn-icon-success-outline)",
+        ghost: "var(--sys-btn-icon-success-ghost)",
+      },
+      successDisabled: {
+        solid: "var(--sys-btn-icon-success-disabled-solid)",
+        outline: "var(--sys-btn-icon-success-disabled-outline)",
+        ghost: "var(--sys-btn-icon-success-disabled-ghost)",
+      },
+      warning: {
+        solid: "var(--sys-btn-icon-warning-solid)",
+        outline: "var(--sys-btn-icon-warning-outline)",
+        ghost: "var(--sys-btn-icon-warning-ghost)",
+      },
+      warningDisabled: {
+        solid: "var(--sys-btn-icon-warning-disabled-solid)",
+        outline: "var(--sys-btn-icon-warning-disabled-outline)",
+        ghost: "var(--sys-btn-icon-warning-disabled-ghost)",
+      },
+      danger: {
+        solid: "var(--sys-btn-icon-danger-solid)",
+        outline: "var(--sys-btn-icon-danger-outline)",
+        ghost: "var(--sys-btn-icon-danger-ghost)",
+      },
+      dangerDisabled: {
+        solid: "var(--sys-btn-icon-danger-disabled-solid)",
+        outline: "var(--sys-btn-icon-danger-disabled-outline)",
+        ghost: "var(--sys-btn-icon-danger-disabled-ghost)",
+      },
+      neutral: {
+        solid: "var(--sys-btn-icon-neutral-solid)",
+        outline: "var(--sys-btn-icon-neutral-outline)",
+        ghost: "var(--sys-btn-icon-neutral-ghost)",
+      },
+      neutralDisabled: {
+        solid: "var(--sys-btn-icon-neutral-disabled-solid)",
+        outline: "var(--sys-btn-icon-neutral-disabled-outline)",
+        ghost: "var(--sys-btn-icon-neutral-disabled-ghost)",
+      },
+    },
+    stateLayer: {
+      primary: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-primary-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-primary-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-primary-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-primary-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-primary-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-primary-ghost-pressed)",
+        },
+      },
+      secondary: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-secondary-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-secondary-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-secondary-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-secondary-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-secondary-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-secondary-ghost-pressed)",
+        },
+      },
+      tertiary: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-tertiary-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-tertiary-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-tertiary-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-tertiary-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-tertiary-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-tertiary-ghost-pressed)",
+        },
+      },
+      info: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-info-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-info-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-info-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-info-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-info-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-info-ghost-pressed)",
+        },
+      },
+      success: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-success-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-success-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-success-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-success-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-success-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-success-ghost-pressed)",
+        },
+      },
+      warning: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-warning-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-warning-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-warning-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-warning-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-warning-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-warning-ghost-pressed)",
+        },
+      },
+      danger: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-danger-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-danger-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-danger-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-danger-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-danger-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-danger-ghost-pressed)",
+        },
+      },
+      neutral: {
+        solid: {
+          hover: "var(--sys-btn-state-layer-neutral-solid-hover)",
+          pressed: "var(--sys-btn-state-layer-neutral-solid-pressed)",
+        },
+        outline: {
+          hover: "var(--sys-btn-state-layer-neutral-outline-hover)",
+          pressed: "var(--sys-btn-state-layer-neutral-outline-pressed)",
+        },
+        ghost: {
+          hover: "var(--sys-btn-state-layer-neutral-ghost-hover)",
+          pressed: "var(--sys-btn-state-layer-neutral-ghost-pressed)",
+        },
+      },
+    },
+  },
+  iconBtn: {
+    icon: {
+      primary: "var(--sys-icon-btn-icon-primary)",
+      secondary: "var(--sys-icon-btn-icon-secondary)",
+      tertiary: "var(--sys-icon-btn-icon-tertiary)",
+      info: "var(--sys-icon-btn-icon-info)",
+      success: "var(--sys-icon-btn-icon-success)",
+      warning: "var(--sys-icon-btn-icon-warning)",
+      danger: "var(--sys-icon-btn-icon-danger)",
+      neutral: "var(--sys-icon-btn-icon-neutral)",
+      primaryDisabled: "var(--sys-icon-btn-icon-primary-disabled)",
+      secondaryDisabled: "var(--sys-icon-btn-icon-secondary-disabled)",
+      tertiaryDisabled: "var(--sys-icon-btn-icon-tertiary-disabled)",
+      infoDisabled: "var(--sys-icon-btn-icon-info-disabled)",
+      successDisabled: "var(--sys-icon-btn-icon-success-disabled)",
+      warningDisabled: "var(--sys-icon-btn-icon-warning-disabled)",
+      dangerDisabled: "var(--sys-icon-btn-icon-danger-disabled)",
+      neutralDisabled: "var(--sys-icon-btn-icon-neutral-disabled)",
+    },
+    stateLayer: {
+      primary: {
+        hover: "var(--sys-icon-btn-state-layer-primary-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-primary-pressed)",
+      },
+      secondary: {
+        hover: "var(--sys-icon-btn-state-layer-secondary-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-secondary-pressed)",
+      },
+      tertiary: {
+        hover: "var(--sys-icon-btn-state-layer-tertiary-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-tertiary-pressed)",
+      },
+      info: {
+        hover: "var(--sys-icon-btn-state-layer-info-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-info-pressed)",
+      },
+      success: {
+        hover: "var(--sys-icon-btn-state-layer-success-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-success-pressed)",
+      },
+      warning: {
+        hover: "var(--sys-icon-btn-state-layer-warning-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-warning-pressed)",
+      },
+      danger: {
+        hover: "var(--sys-icon-btn-state-layer-danger-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-danger-pressed)",
+      },
+      neutral: {
+        hover: "var(--sys-icon-btn-state-layer-neutral-hover)",
+        pressed: "var(--sys-icon-btn-state-layer-neutral-pressed)",
+      },
+    },
+  },
+  radioBtn: {
+    radioBtn: {
+      enabled: {
+        unselected: "var(--sys-radio-btn-radio-btn-enabled-unselected)",
+        selected: "var(--sys-radio-btn-radio-btn-enabled-selected)",
+      },
+      disabled: {
+        unselected: "var(--sys-radio-btn-radio-btn-disabled-unselected)",
+        selected: "var(--sys-radio-btn-radio-btn-disabled-selected)",
+      },
+    },
+    label: {
+      enabled: "var(--sys-radio-btn-label-enabled)",
+      disabled: "var(--sys-radio-btn-label-disabled)",
+    },
+    stateLayer: {
+      hover: {
+        unselected: "var(--sys-radio-btn-state-layer-hover-unselected)",
+        selected: "var(--sys-radio-btn-state-layer-hover-selected)",
+      },
+      pressed: {
+        unselected: "var(--sys-radio-btn-state-layer-pressed-unselected)",
+        selected: "var(--sys-radio-btn-state-layer-pressed-selected)",
+      },
+    },
+  },
+  checkbox: {
+    checkbox: {
+      enabled: {
+        unselected: "var(--sys-checkbox-checkbox-enabled-unselected)",
+        selected: "var(--sys-checkbox-checkbox-enabled-selected)",
+      },
+      disabled: {
+        unselected: "var(--sys-checkbox-checkbox-disabled-unselected)",
+        selected: "var(--sys-checkbox-checkbox-disabled-selected)",
+      },
+    },
+    label: {
+      enabled: "var(--sys-checkbox-label-enabled)",
+      disabled: "var(--sys-checkbox-label-disabled)",
+    },
+    stateLayer: {
+      hover: {
+        unselected: "var(--sys-checkbox-state-layer-hover-unselected)",
+        selected: "var(--sys-checkbox-state-layer-hover-selected)",
+      },
+      pressed: {
+        unselected: "var(--sys-checkbox-state-layer-pressed-unselected)",
+        selected: "var(--sys-checkbox-state-layer-pressed-selected)",
+      },
     },
   },
 };
