@@ -1,13 +1,13 @@
 export const ref = {
   typeface: {
     brand: "Pretendard",
-    fontweight: {
+    fontWeight: {
       regular: 400,
       medium: 500,
       bold: 700,
       semibold: 600,
     },
-    fontsize: {
+    fontSize: {
       "0": "0.75rem",
       "1": "0.875rem",
       "2": "1rem",
@@ -18,7 +18,7 @@ export const ref = {
       "7": "1.625rem",
       "8": "1.75rem",
     },
-    lineheight: {
+    lineHeight: {
       "0": "1.25rem",
       "1": "1.375rem",
       "2": "1.5rem",
