@@ -12,11 +12,11 @@
     "prepare": "husky install",
     "dev:all": "yarn dev:storybook & yarn dev:packages",
     "dev:storybook": "nx storybook @join-world/storybook",
-    "dev:packages": "nx run-many --target=dev --projects='@join-world/ui-components-*'"
+    "dev:packages": "nx run-many --target=dev --projects='@join-world/ui-components-*,@join-world/ui-hooks-*'"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@storybook/addon-docs": "^7.4.0",
+    "@storybook/addon-docs": "^7.6.10",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
