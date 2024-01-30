@@ -1,5 +1,5 @@
 export type ButtonProps = {
-  state?:
+  theme?:
     | "primary"
     | "secondary"
     | "tertiary"
@@ -9,10 +9,32 @@ export type ButtonProps = {
     | "danger"
     | "neutral";
   variant?: "solid" | "outline" | "ghost";
-  flexible?: boolean;
   size?: "s" | "m" | "l" | "xl";
   isDisabled?: boolean;
   isLoading?: boolean;
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
+  isFlexible?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export type ColorType = {
+  enableColor: string;
+  enableTextColor: string;
+  hoverColor: string;
+  activeColor: string;
+};
+
+export const THEME = {
+  PRIMARY: "primary",
+  INFO: "info",
+  SECONDARY: "secondary",
+  SUCCESS: "success",
+  TERTIARY: "tertiary",
+  WARNING: "warning",
+  DANGER: "danger",
+  NEUTRAL: "neutral",
+} as const;
+
+export const VARIANT = {
+  SOLID: "solid",
+  GHOST: "ghost",
+  OUTLINE: "outline",
+} as const;

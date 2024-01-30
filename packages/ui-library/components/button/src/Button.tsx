@@ -1,4 +1,3 @@
-import { vars } from "@join-world/themes";
 import { useButton } from "@join-world/ui-hooks-button";
 import { assignInlineVars } from "@vanilla-extract/dynamic";
 import { clsx } from "clsx";
@@ -16,91 +15,28 @@ import {
   spinnerStyle,
 } from "./style.css";
 import { ButtonProps } from "./types";
+import { getBtnColor } from "./utils/getBtnColor";
+import { getBtnWidth } from "./utils/getBtnWidth";
 
 const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
   const { buttonProps } = useButton(props);
 
   // default
   const {
-    state = "primary",
-    flexible = true,
+    theme = "primary",
     size = "s",
     variant = "solid",
-    leftIcon,
-    rightIcon,
+    isFlexible = false,
     isLoading,
     children,
     style,
   } = props;
 
-  let enableColor;
-  let enableTextColor = vars.colors.mode.sys.color.text.other.white;
-  let hoverColor = vars.colors.mode.sys.color.stateLayer.baseOp2;
-  let activeColor = vars.colors.mode.sys.color.stateLayer.baseOp4;
+  const { enableColor, enableTextColor, hoverColor, activeColor } = getBtnColor(
+    { theme: theme, variant: variant },
+  );
 
-  switch (state) {
-    case "primary":
-    case "info":
-      enableColor = vars.colors.mode.sys.color.container.primary.fill.dark2;
-      switch (variant) {
-        case "ghost":
-        case "outline":
-          hoverColor = vars.colors.mode.sys.color.stateLayer.primaryOp1;
-          activeColor = vars.colors.mode.sys.color.stateLayer.primaryOp4;
-          break;
-      }
-      break;
-    case "secondary":
-    case "success":
-      enableColor = vars.colors.mode.sys.color.container.secondary.fill.dark2;
-      switch (variant) {
-        case "ghost":
-        case "outline":
-          hoverColor = vars.colors.mode.sys.color.stateLayer.secondaryOp1;
-          activeColor = vars.colors.mode.sys.color.stateLayer.secondaryOp4;
-          break;
-      }
-      break;
-    case "tertiary":
-      enableColor = vars.colors.mode.sys.color.container.tertiary.fill.dark2;
-      enableTextColor = vars.colors.mode.sys.color.text.other.black;
-      switch (variant) {
-        case "ghost":
-        case "outline":
-          hoverColor = vars.colors.mode.sys.color.stateLayer.tertiaryOp1;
-          activeColor = vars.colors.mode.sys.color.stateLayer.tertiaryOp4;
-          break;
-      }
-      break;
-    case "warning":
-      enableColor = vars.colors.mode.sys.color.container.warning.fill.dark2;
-      switch (variant) {
-        case "ghost":
-        case "outline":
-          hoverColor = vars.colors.mode.sys.color.stateLayer.warningOp1;
-          activeColor = vars.colors.mode.sys.color.stateLayer.warningOp4;
-          break;
-      }
-      break;
-    case "danger":
-      enableColor = vars.colors.mode.sys.color.container.danger.fill.dark2;
-      switch (variant) {
-        case "ghost":
-        case "outline":
-          hoverColor = vars.colors.mode.sys.color.stateLayer.dangerOp1;
-          activeColor = vars.colors.mode.sys.color.stateLayer.dangerOp4;
-          break;
-      }
-      break;
-    case "neutral":
-      enableColor = vars.colors.mode.sys.color.container.base.fill.light1;
-      enableTextColor = vars.colors.mode.sys.color.text.other.black;
-      break;
-    default:
-      enableColor = vars.colors.mode.sys.color.container.primary.fill.dark2;
-  }
-
-  const btnWidth = leftIcon || rightIcon ? "86px" : "64px";
+  const btnWidth = getBtnWidth("default", size);
 
   return (
     <button
@@ -108,7 +44,7 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
       ref={ref}
       className={clsx([
         buttonStyle({
-          flexible,
+          isFlexible,
           size,
           variant,
         }),
@@ -125,9 +61,7 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
       }}
     >
       {isLoading && <div className={spinnerStyle()} />}
-      {leftIcon && <span className={spanStyle()}>{leftIcon}</span>}
       <span className={spanStyle()}>{children}</span>
-      {rightIcon && <span className={spanStyle()}>{rightIcon}</span>}
       <div className={layerStyle()} />
     </button>
   );
