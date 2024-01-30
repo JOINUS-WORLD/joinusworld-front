@@ -38,7 +38,7 @@ export const useButton: OverloadedButtonFunction = (props: any) => {
   };
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
-  const { flexible, rightIcon, leftIcon, ...propRest } = rest;
+  const { isFlexible, rightIcon, leftIcon, ...propRest } = rest;
 
   const baseProps = {
     ...propRest,

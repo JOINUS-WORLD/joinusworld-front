@@ -8,14 +8,6 @@ export const hoverColorVariant = createVar();
 export const activeColorVariant = createVar();
 export const flexibleWidthVariant = createVar();
 
-// [버튼 유형]
-// state = primary, secondary, tertiary, info, success, warning, danger
-// flexible = true / false
-// size = s, m, l, xl
-// type = solid, outline, ghost
-// state = default, hover, pressed, focus, disabled
-// left-icon or right-icon = true / false
-
 export const buttonStyle = recipe({
   base: {
     margin: 0,
@@ -33,7 +25,7 @@ export const buttonStyle = recipe({
     transition: "background-color 0.2s, color 0.2s, border-color 0.2s", //
 
     ...vars.sys.typescale.labelSb1,
-    gap: "6px",
+    gap: "5px",
     position: "relative",
 
     // @ts-ignore
@@ -42,16 +34,18 @@ export const buttonStyle = recipe({
       border: `1px solid ${vars.colors.mode.sys.color.text.other.white}`,
     },
     "&[disabled]": {
-      cursor: "not-allowed",
+      pointerEvents: "none",
+      opacity: 0.6,
     },
     '&[data-loading="true"]': {
+      pointerEvents: "none",
       "& span": {
         opacity: 0,
       },
     },
   },
   variants: {
-    flexible: {
+    isFlexible: {
       true: {
         padding: "0 27px",
       },
@@ -84,14 +78,14 @@ export const buttonStyle = recipe({
       },
       outline: {
         border: `1px solid ${enableColorVariant}`,
-        color: enableColorVariant,
+        color: enableTextColorVariant,
         "&[disabled]": {
           border: `1px solid ${vars.colors.mode.sys.color.stateLayer.baseOp4}`,
           color: vars.colors.mode.sys.color.stateLayer.baseOp4,
         },
       },
       ghost: {
-        color: enableColorVariant,
+        color: enableTextColorVariant,
         "&[disabled]": {
           color: vars.colors.mode.sys.color.stateLayer.baseOp4,
         },
@@ -126,6 +120,10 @@ export const spanStyle = recipe({
   base: {
     zIndex: 1,
     pointerEvents: "none",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "5px",
   },
 });
 

@@ -6,7 +6,7 @@ import { Button as _Button } from "@join-world/ui-components-button";
 import React from "react";
 
 export default {
-  title: "Components/Button",
+  title: "Components/Button/Default",
   component: _Button,
   parameters: {
     layout: "centered",
@@ -16,8 +16,11 @@ export default {
     size: {
       options: ["s", "m", "l", "xl"],
       control: "inline-radio",
+      table: {
+        defaultValue: { summary: "s" },
+      },
     },
-    state: {
+    theme: {
       options: [
         "primary",
         "secondary",
@@ -29,10 +32,16 @@ export default {
         "neutral",
       ],
       control: "inline-radio",
+      table: {
+        defaultValue: { summary: "primary" },
+      },
     },
     variant: {
       options: ["solid", "outline", "ghost"],
       control: "inline-radio",
+      table: {
+        defaultValue: { summary: "solid" },
+      },
     },
   },
 };
@@ -40,68 +49,67 @@ export default {
 export const PrimarySolidS = {
   args: {
     size: "s",
-    state: "primary",
+    theme: "primary",
     variant: "solid",
     children: "Button",
     isLoading: false,
     isDisabled: false,
-    flexible: false,
+    isFlexible: false,
   },
 };
 
 export const SecondaryOutlineM = {
   args: {
     size: "m",
-    state: "secondary",
+    theme: "secondary",
     variant: "outline",
     children: "Button",
     isDisabled: false,
     isLoading: false,
-    flexible: false,
+    isFlexible: false,
   },
 };
 
 export const TertiaryGhostL = {
   args: {
     size: "l",
-    state: "tertiary",
+    theme: "tertiary",
     variant: "ghost",
     children: "Button",
     isDisabled: false,
     isLoading: false,
-    flexible: false,
+    isFlexible: false,
   },
 };
 
 export const WarningSolidFlexibleXL = {
   args: {
     size: "xl",
-    state: "warning",
+    theme: "warning",
     variant: "solid",
     children: "Cats are dangerously adorable to the heart..",
     isDisabled: false,
     isLoading: false,
-    flexible: true,
+    isFlexible: true,
   },
 };
 
-export const DangerOutlineWithRightIconM = {
+export const loadingIconM = {
   args: {
-    size: "m",
-    state: "danger",
+    size: "l",
+    theme: "danger",
     variant: "outline",
     children: "Button",
-    isLoading: false,
+    isLoading: true,
     isDisabled: false,
-    flexible: false,
-    rightIcon: "❌",
+    isFlexible: false,
   },
 };
 
 export const onClickButton = {
   render: () => {
     return (
-      <_Button onClick={() => console.log("click! 🐱")}>
+      <_Button isFlexible onClick={() => console.log("click! 🐱")}>
         Click to console log something
       </_Button>
     );
