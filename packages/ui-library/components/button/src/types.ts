@@ -15,6 +15,12 @@ export type ButtonProps = {
   isFlexible?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+export type ButtonWithIconProps = {
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  icon?: React.ReactNode;
+} & ButtonProps;
+
 export type ColorType = {
   enableColor: string;
   enableTextColor: string;
