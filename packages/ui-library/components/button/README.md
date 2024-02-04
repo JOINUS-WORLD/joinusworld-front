@@ -1,5 +1,8 @@
 # 버튼 컴포넌트 / Button Component
 
+- [Default Button](#1-default-button)
+- [Icon Button](#2-icon-button)
+
 ## 1. Default Button
 
 > 웹 접근성을 고려한 버튼 컴포넌트 구현 / Implementation of a button component with consideration for web accessibility.
@@ -76,7 +79,7 @@ export default function TestPage() {
 
 ### 0. figma
 
-| icon                                                                                                                                        | icon with text                                                                                                                              |
+| icon                                                                                                                                        | icon with Text                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="333" alt="image" src="https://github.com/JOINUS-WORLD/joinusworld-front/assets/125176463/cbd26fce-dcea-4868-93a3-aad01ec36c6d"> | <img width="333" alt="image" src="https://github.com/JOINUS-WORLD/joinusworld-front/assets/125176463/f75fe553-1b60-4b83-9baf-5b4b4c633be0"> |
 
