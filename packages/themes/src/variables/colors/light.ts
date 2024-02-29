@@ -231,7 +231,7 @@ export const light = {
           light1: "#FFEBED",
         },
         base: {
-          dark2: "#495057",
+          dark2: "#212529",
           dark1: "#868e96",
           light2: "#f1f3f5",
           light1: "#f8f9fa",
@@ -401,7 +401,7 @@ export const light = {
           outline: "#00000033",
           ghost: "#00000033",
         },
-        neutral: { solid: "#495057", outline: "#495057", ghost: "#495057" },
+        neutral: { solid: "#212529", outline: "#212529", ghost: "#212529" },
         "neutral-disabled": {
           solid: "#ffffff",
           outline: "#00000033",
@@ -451,7 +451,7 @@ export const light = {
           outline: "#00000033",
           ghost: "#00000033",
         },
-        neutral: { solid: "#495057", outline: "#495057", ghost: "#495057" },
+        neutral: { solid: "#212529", outline: "#495057", ghost: "#495057" },
         "neutral-disabled": {
           solid: "#ffffff",
           outline: "#00000033",
@@ -536,7 +536,7 @@ export const light = {
         enabled: { unselected: "#dee2e6", selected: "#0054CC" },
         disabled: { unselected: "#f1f3f5", selected: "#0069ff1f" },
       },
-      label: { enabled: "#495057", disabled: "#868e96" },
+      label: { enabled: "#212529", disabled: "#868e96" },
       "state-layer": {
         hover: { unselected: "#0000000a", selected: "#0069ff14" },
         pressed: { unselected: "#00000014", selected: "#0069ff29" },
@@ -547,7 +547,7 @@ export const light = {
         enabled: { unselected: "#dee2e6", selected: "#0054CC" },
         disabled: { unselected: "#f1f3f5", selected: "#0069ff1f" },
       },
-      label: { enabled: "#495057", disabled: "#868e96" },
+      label: { enabled: "#212529", disabled: "#868e96" },
       "state-layer": {
         hover: { unselected: "#0000000a", selected: "#0069ff14" },
         pressed: { unselected: "#00000014", selected: "#0069ff29" },
