@@ -3,32 +3,68 @@
 import styled from "@emotion/styled";
 import { vars } from "@join-world/themes";
 import { sys } from "@packages/themes/dist/variables/colors/mode";
+import Image from "next/image";
+import Link from "next/link";
+
+import JUWLogo from "../../../public/assets/JUW_logo.png"
 
 export default function Header() {
   return (
     <S.Nav>
-      <h1>Hello World</h1>
+      <S.Contents>
+          <Image src={JUWLogo} alt="JOINUSWORLD-KOREA" width={232.12} height={36} />
+          <S.Links>
+            <Link href="/">QNA 홈</Link>
+            <Link href="/">커뮤니티</Link>
+            <Link href="/">프리톡</Link>
+          </S.Links>
+          <S.Searchbar>
+
+          </S.Searchbar>
+          <S.Links>
+            <Link href="/">한국어</Link>
+            <Link href="/">문의</Link>
+            <Link href="/">후원</Link>
+            <Link href="/">로그인/회원가입</Link>
+          </S.Links>
+      </S.Contents>
     </S.Nav>
   );
 }
 
 const S = {
-  Nav: styled.div`
+  Nav: styled.nav`
     display: flex;
     width: 100%;
     height: 60px;
     box-sizing: border-box;
-    max-width: 1920px;
-    top: 42px;
-    left: 20px;
-    border-bottom: 1px solid ${sys.color.container.base.border.light1}
+    width: 1920px;
     padding: 0px 24px;
+    border-bottom: 1px solid black;
   `,
   Contents: styled.div`
+    display: flex;
+    text-align: center;
+    align-items: center;
     width: 1440px;
     height: 60px;
     padding: 0px 24px;
     gap: 24px;
+  `,
+  Links: styled.div`
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    gap: 36px;
+  `,
+  Searchbar: styled.input`
+    width: 553.68px;
+    height: 40px;
+    gap: 4px;
+  `,
+  Icon: styled.i`
+    height: 24px;
+    width: 24px;
   `
   // Text: styled.div`
   //   /* 아래에서 테스트 해보세요. */
