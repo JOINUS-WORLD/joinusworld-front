@@ -9,7 +9,7 @@ export const BaseStyle = style({
 
   // @ts-ignore
   "&:focus-visible": {
-    boxShadow: vars.sys.shadow.level1, // temporary
+    boxShadow: vars.sys.shadow[3], // temporary
   },
 });
 

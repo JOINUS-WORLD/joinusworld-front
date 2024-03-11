@@ -8,7 +8,7 @@ const OrderedList = (
   props: OrderListProps,
   ref: React.Ref<HTMLOListElement>,
 ) => {
-  const { spacing = "size3", children, ...rest } = props;
+  const { spacing = "3", children, ...rest } = props;
 
   return (
     <Flex

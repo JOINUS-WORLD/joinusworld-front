@@ -8,12 +8,7 @@ const UnorderedList = (
   props: UnorderedListProps,
   ref: React.Ref<HTMLOListElement>,
 ) => {
-  const {
-    listStyleType = "disc",
-    spacing = "size3",
-    children,
-    ...rest
-  } = props;
+  const { listStyleType = "disc", spacing = "3", children, ...rest } = props;
 
   return (
     <Flex
