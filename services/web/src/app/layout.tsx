@@ -1,6 +1,7 @@
 import "@join-world/themes/theme-light.css";
 import "@join-world/themes/theme-dark.css";
 import "@join-world/themes/theme-class.css";
+import "@join-world/ui-components-button/style.css";
 
 import type { Metadata } from "next";
 
