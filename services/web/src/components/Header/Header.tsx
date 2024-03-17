@@ -2,7 +2,6 @@
 
 import styled from "@emotion/styled";
 import { vars } from "@join-world/themes";
-import { sys } from "@packages/themes/dist/variables/colors/mode";
 import Image from "next/image";
 import Link from "next/link";
 
