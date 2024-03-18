@@ -2717,6 +2717,7 @@ __metadata:
     cypress: "npm:^13.6.2"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.4"
+    material-symbols: "npm:^0.17.0"
     next: "npm:^13.5"
     postcss: "npm:^8.4.32"
     postcss-styled-syntax: "npm:^0.5.0"
@@ -11596,6 +11597,7 @@ __metadata:
     lint-staged: "npm:^15.0.2"
     nx: "npm:^18.0.7"
     prettier: "npm:^3.0.3"
+    stylelint-config-standard: "npm:^36.0.0"
     typescript: "npm:^5.3.3"
   peerDependencies:
     react: ^18
@@ -12354,6 +12356,13 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 191b9a9defeed02e12dd340cebf279f577266dac7b34574fa44ce4d64ee8536f9967d455b8303c853f84413feb473118290a6160d8221eeaf3b9e4961b8980e3
+  languageName: node
+  linkType: hard
+
+"material-symbols@npm:^0.17.0":
+  version: 0.17.0
+  resolution: "material-symbols@npm:0.17.0"
+  checksum: e4035c7d25dc15c39e58a3c4e35ac2a2fefdd2d23dfae565b92afc45e0fba2a218a7f1711ce67e62cb97d761ac1b0301b2bfe89a302ecbd55432f07c0d90ea34
   languageName: node
   linkType: hard
 

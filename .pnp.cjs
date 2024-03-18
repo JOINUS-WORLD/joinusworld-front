@@ -3756,6 +3756,10 @@ const RAW_RUNTIME_STATE =
       "virtual:5fb676ed57601e7d032f5a9877cf8ce3d0a55d602104544c687a38e204fd6b415df5f2110290c8349580f211f5cde5bb11cf19438ae5dbc68b797871fff22cea#npm:7.3.2"\
     ],\
     [\
+      "material-symbols",\
+      "npm:0.17.0"\
+    ],\
+    [\
       "mathml-tag-names",\
       "npm:2.1.3"\
     ],\
@@ -4887,11 +4891,11 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "stylelint-config-recommended",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:14.0.0"\
+      "virtual:0b70fe50e7e8be646b01f5df5c719062f31b7f104d6085152d910eccaf76ad709c83dc8438d6456df82191ac41d599a488716c09cc8fe5283d4839cae19a8869#npm:14.0.0"\
     ],\
     [\
       "stylelint-config-standard",\
-      "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:36.0.0"\
+      "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:36.0.0"\
     ],\
     [\
       "stylelint-config-styled-components",\
@@ -5455,6 +5459,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:15.2.0"],\
           ["nx", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:18.0.7"],\
           ["prettier", "npm:3.1.1"],\
+          ["stylelint-config-standard", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:36.0.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -9610,6 +9615,7 @@ const RAW_RUNTIME_STATE =
           ["cypress", "npm:13.6.2"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:14.0.4"],\
+          ["material-symbols", "npm:0.17.0"],\
           ["next", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:13.5.6"],\
           ["postcss", "npm:8.4.32"],\
           ["postcss-styled-syntax", "virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:0.5.0"],\
@@ -20728,6 +20734,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:15.2.0"],\
           ["nx", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:18.0.7"],\
           ["prettier", "npm:3.1.1"],\
+          ["stylelint-config-standard", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:36.0.0"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -21580,6 +21587,15 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/react",\
           "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["material-symbols", [\
+      ["npm:0.17.0", {\
+        "packageLocation": "../../../C:/Users/Will/AppData/Local/Yarn/Berry/cache/material-symbols-npm-0.17.0-b3d7224df6-10c0.zip/node_modules/material-symbols/",\
+        "packageDependencies": [\
+          ["material-symbols", "npm:0.17.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -25929,6 +25945,19 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:0b70fe50e7e8be646b01f5df5c719062f31b7f104d6085152d910eccaf76ad709c83dc8438d6456df82191ac41d599a488716c09cc8fe5283d4839cae19a8869#npm:14.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/stylelint-config-recommended-virtual-13a2cc82db/4/C:/Users/Will/AppData/Local/Yarn/Berry/cache/stylelint-config-recommended-npm-14.0.0-59659a1741-10c0.zip/node_modules/stylelint-config-recommended/",\
+        "packageDependencies": [\
+          ["stylelint-config-recommended", "virtual:0b70fe50e7e8be646b01f5df5c719062f31b7f104d6085152d910eccaf76ad709c83dc8438d6456df82191ac41d599a488716c09cc8fe5283d4839cae19a8869#npm:14.0.0"],\
+          ["@types/stylelint", null],\
+          ["stylelint", null]\
+        ],\
+        "packagePeers": [\
+          "@types/stylelint",\
+          "stylelint"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:14.0.0", {\
         "packageLocation": "./.yarn/__virtual__/stylelint-config-recommended-virtual-6a89fb0248/4/C:/Users/Will/AppData/Local/Yarn/Berry/cache/stylelint-config-recommended-npm-14.0.0-59659a1741-10c0.zip/node_modules/stylelint-config-recommended/",\
         "packageDependencies": [\
@@ -25950,6 +25979,20 @@ const RAW_RUNTIME_STATE =
           ["stylelint-config-standard", "npm:36.0.0"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:36.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/stylelint-config-standard-virtual-0b70fe50e7/4/C:/Users/Will/AppData/Local/Yarn/Berry/cache/stylelint-config-standard-npm-36.0.0-37594da779-10c0.zip/node_modules/stylelint-config-standard/",\
+        "packageDependencies": [\
+          ["stylelint-config-standard", "virtual:15b746ed5947ebb8c6fdd341e3eb3d0c81bec4b11dc17888f3054dc849a066450c7d33612ea8892afaafa591b7a2b605c697ea1649148ca8e5b91afbfeeded65#npm:36.0.0"],\
+          ["@types/stylelint", null],\
+          ["stylelint", null],\
+          ["stylelint-config-recommended", "virtual:0b70fe50e7e8be646b01f5df5c719062f31b7f104d6085152d910eccaf76ad709c83dc8438d6456df82191ac41d599a488716c09cc8fe5283d4839cae19a8869#npm:14.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/stylelint",\
+          "stylelint"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:cc285163d2321bddd5e29845f4a65bdfac4c51d8ae098e3a801d668080fb67a398a3461b81516cd286df9a1e9464aff2e8c73f6b68be42ed3ae68c9dc41435f7#npm:36.0.0", {\
         "packageLocation": "./.yarn/__virtual__/stylelint-config-standard-virtual-e4f91987c3/4/C:/Users/Will/AppData/Local/Yarn/Berry/cache/stylelint-config-standard-npm-36.0.0-37594da779-10c0.zip/node_modules/stylelint-config-standard/",\

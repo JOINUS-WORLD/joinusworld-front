@@ -5,7 +5,13 @@ import { vars } from "@join-world/themes";
 import Image from "next/image";
 import Link from "next/link";
 
+// utils
+import { HeaderLinks } from "@/utils/Header.utils";
+const { leftLinks, rightLinks, languageOpts } = HeaderLinks;
+
+// media
 import JUWLogo from "../../../public/assets/JUW_logo.png"
+
 
 export default function Header() {
   return (
@@ -13,18 +19,31 @@ export default function Header() {
       <S.Contents>
           <Image src={JUWLogo} alt="JOINUSWORLD-KOREA" width={232.12} height={36} />
           <S.Links>
-            <Link href="/">QNA 홈</Link>
-            <Link href="/">커뮤니티</Link>
-            <Link href="/">프리톡</Link>
+            {leftLinks.map((link) => {
+              return (
+                <>
+                  <Link href={link.url} key={link.label}>
+                    {link.label}
+                  </Link>
+                </>
+              )
+            })}
           </S.Links>
-          <S.Searchbar>
-
-          </S.Searchbar>
+          <S.Searchbar />
+          <S.LanguagePicker>
+            <i className="material-symbols-outlined">
+              language
+              <span>한국어</span>
+            </i>
+          </S.LanguagePicker>
           <S.Links>
-            <Link href="/">한국어</Link>
-            <Link href="/">문의</Link>
-            <Link href="/">후원</Link>
-            <Link href="/">로그인/회원가입</Link>
+            {rightLinks.map((link) => {
+              return (
+                <Link href={link.url} key={link.label}>
+                  {link.label}
+                </Link>
+              )
+            })}
           </S.Links>
       </S.Contents>
     </S.Nav>
@@ -34,11 +53,10 @@ export default function Header() {
 const S = {
   Nav: styled.nav`
     display: flex;
-    width: 100%;
+    justify-content: center;
     height: 60px;
     box-sizing: border-box;
     width: 1920px;
-    padding: 0px 24px;
     border-bottom: 1px solid black;
   `,
   Contents: styled.div`
@@ -55,6 +73,11 @@ const S = {
     justify-content: center;
     width: 1280px;
     gap: 36px;
+  `,
+  LanguagePicker: styled.i`w
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `,
   Searchbar: styled.input`
     width: 553.68px;

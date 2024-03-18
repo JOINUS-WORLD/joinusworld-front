@@ -1,6 +1,10 @@
 import "@join-world/themes/theme-light.css";
 import "@join-world/themes/theme-dark.css";
 import "@join-world/themes/theme-class.css";
+// global styling
+import "../app/global/global.css";
+// material icons
+import "material-symbols";
 
 import type { Metadata } from "next";
 
