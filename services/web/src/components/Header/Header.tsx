@@ -31,7 +31,7 @@ export default function Header() {
               )
             })}
           </S.Links>
-          <S.Searchbar placeholder="긍금한 점이 있으신가요?">
+          <S.Searchbar placeholder="궁금한 점이 있으신가요?">
             
           </S.Searchbar>
           <S.LanguagePicker>
