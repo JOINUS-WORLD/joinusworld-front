@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { vars } from "@join-world/themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 // utils
 import { HeaderLinks } from "@/utils/Header.utils";
@@ -14,34 +15,37 @@ import JUWLogo from "../../../public/assets/JUW_logo.png"
 
 
 export default function Header() {
+
+  const [currentLanguage, setCurrentLanguage] = useState("한국어");
+
   return (
     <S.Nav>
       <S.Contents>
           <Image src={JUWLogo} alt="JOINUSWORLD-KOREA" width={232.12} height={36} />
           <S.Links>
-            {leftLinks.map((link) => {
+            {leftLinks.map((link, i) => {
               return (
-                <>
-                  <Link href={link.url} key={link.label}>
+                  <StyledLink href={link.url} key={i}>
                     {link.label}
-                  </Link>
-                </>
+                  </StyledLink>
               )
             })}
           </S.Links>
-          <S.Searchbar />
+          <S.Searchbar placeholder="긍금한 점이 있으신가요?">
+            
+          </S.Searchbar>
           <S.LanguagePicker>
-            <i className="material-symbols-outlined">
+            <S.Icon className="material-symbols-outlined">
               language
-              <span>한국어</span>
-            </i>
+            </S.Icon>
+            <S.CurrentLanguage>{currentLanguage}</S.CurrentLanguage>
           </S.LanguagePicker>
           <S.Links>
-            {rightLinks.map((link) => {
+            {rightLinks.map((link, i) => {
               return (
-                <Link href={link.url} key={link.label}>
+                <StyledLink href={link.url} key={i}>
                   {link.label}
-                </Link>
+                </StyledLink>
               )
             })}
           </S.Links>
@@ -56,8 +60,8 @@ const S = {
     justify-content: center;
     height: 60px;
     box-sizing: border-box;
-    width: 1920px;
-    border-bottom: 1px solid black;
+    width: 100%;
+    color: ${vars.colors.mode.ref.palette.black};
   `,
   Contents: styled.div`
     display: flex;
@@ -74,19 +78,29 @@ const S = {
     width: 1280px;
     gap: 36px;
   `,
-  LanguagePicker: styled.i`w
+  LanguagePicker: styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+  `,
+  CurrentLanguage: styled.span`
+    font-size: ${vars.ref.typeface.fontSize[1]};
+    font-weight: ${vars.ref.typeface.fontWeight.semibold};
+    word-break: keep-all;
   `,
   Searchbar: styled.input`
-    width: 553.68px;
+    width: 100%;
     height: 40px;
     gap: 4px;
+    padding: 0px 24px;
+    border: none;
   `,
   Icon: styled.i`
     height: 24px;
     width: 24px;
+    padding-right: 8px;
   `
   // Text: styled.div`
   //   /* 아래에서 테스트 해보세요. */
@@ -108,3 +122,9 @@ const S = {
   //   /* ${vars.sys.typescale.bodyB1} */
   // `,
 };
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  font-weight: ${vars.ref.typeface.fontWeight.semibold}
+`

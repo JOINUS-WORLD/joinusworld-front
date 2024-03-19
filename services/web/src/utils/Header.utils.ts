@@ -51,7 +51,7 @@ export const HeaderLinks: { leftLinks: LinkObject[], rightLinks:LinkObject[], la
     { label: "로그인/회원가입", url: "/login" }
   ],
   languageOpts: [
-    { label: "한국어", value: "korean" },
+    { label: "한국어", value: "한국어" },
     { label: "हिन्दी", value: "हिन्दी" },
     { label: "ភាសាខ្មែរ", value: "ភាសាខ្មែរ" },
     { label: "ဗမာစာ", value: "ဗမာစာ" },
