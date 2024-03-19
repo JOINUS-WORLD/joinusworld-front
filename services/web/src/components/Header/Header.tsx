@@ -8,7 +8,7 @@ import { useState } from "react";
 
 // utils
 import { HeaderLinks } from "@/utils/Header.utils";
-const { leftLinks, rightLinks, languageOpts } = HeaderLinks;
+const { leftLinks, rightLinks } = HeaderLinks;
 
 // media
 import JUWLogo from "../../../public/assets/JUW_logo.png"
@@ -16,16 +16,16 @@ import JUWLogo from "../../../public/assets/JUW_logo.png"
 
 export default function Header() {
 
-  const [currentLanguage, setCurrentLanguage] = useState("한국어");
+  const [currentLanguage] = useState("한국어");
 
   return (
     <S.Nav>
       <S.Contents>
           <Image src={JUWLogo} alt="JOINUSWORLD-KOREA" width={232.12} height={36} />
           <S.Links>
-            {leftLinks.map((link, i) => {
+            {leftLinks.map((link) => {
               return (
-                  <StyledLink href={link.url} key={i}>
+                  <StyledLink href={link.url} key={link.label}>
                     {link.label}
                   </StyledLink>
               )
@@ -41,9 +41,9 @@ export default function Header() {
             <S.CurrentLanguage>{currentLanguage}</S.CurrentLanguage>
           </S.LanguagePicker>
           <S.Links>
-            {rightLinks.map((link, i) => {
+            {rightLinks.map((link) => {
               return (
-                <StyledLink href={link.url} key={i}>
+                <StyledLink href={link.url} key={link.label}>
                   {link.label}
                 </StyledLink>
               )
