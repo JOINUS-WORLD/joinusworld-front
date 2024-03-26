@@ -1,8 +1,12 @@
 import "@join-world/themes/theme-light.css";
 import "@join-world/themes/theme-dark.css";
 import "@join-world/themes/theme-class.css";
-import "@join-world/ui-components-button/style.css";
+// global styling
+import "../app/global/globals.css";
+// material icons
+import "material-symbols";
 
+// import "@join-world/ui-components-button/style.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
